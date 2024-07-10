@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESET</title>
+    <meta name="description" content="Page in which are modify the elements in CSS with reset" />
+    <meta name="author" content="Galizia Nicolò" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font family of google -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Section of the header -->
+    <header>
+      <h1>PANATTA: PASSIONE, STILE E INNOVAZIONE</h1>
+  </header>
+
+  <!-- Section of the main -->
+  <main>
+      <p>
+          <a href="#">Panatta</a> è un’azienda orientata al mercato, fondata su principi di eccellenza qualitativa, punto di riferimento per innovazione tecnica, stile ed emozioni. La nostra mission: ideare e realizzare attrezzatura da palestra professionale per il vero allenamento fisico. Attrezzature che siano belle, funzionali, affidabili, durature e competitive nel prezzo.
+      </p>
+
+
+      <h2>ALCUNI ATTREZZI:</h2>
+      <ul>
+          <li><a href="https://www.panattasport.com/it/free-weight-special/super-rowing-machine-circular/" target="_blank">SUPER ROWING CIRCULAR</a></li>
+          <li><a href="https://www.panattasport.com/it/free-weight-special/vertical-leg-press/" target="_blank">VERTICAL LEG PRESS</a></li>
+          <li><a href="https://www.panattasport.com/it/free-weight-special/seal-row-bench/" target="_blank">SEAL ROW BENCH</a></li>
+      </ul>
+
+      <form action="#" method="post">
+        <!-- Insertion personal data -->
+        <fieldset>
+          <legend>DATI PERSONALI</legend>
+
+          <!-- Insertion of the name -->
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Inserisci il tuo nome..."
+            required
+          />
+
+          <!-- Insertion of the surname -->
+          <label for="surname">Cognome:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Inserisci il tuo cognome..."
+            required
+          />
+
+          <!-- Insertion of the gender -->
+          <input type="radio" name="gender" id="male" value="man" />
+          <label for="male">Maschio</label>
+          <input type="radio" name="gender" id="female" value="woman" checked />
+          <label for="female">Femmina</label>
+
+          <!-- Reset of the entered data -->
+          <input type="reset" value="Reset" />
+
+          <!-- Sending of the entered data -->
+          <input type="submit" value="Invia" />
+          </fieldset>
+      </form>
+  </main>
+
+  <!-- Section of the footer -->
+  <footer>
+      <a href="https://www.youtube.com/watch?v=8BhpnaqMHR8?rel=0" target="_blank">GUARDA IL NOSTRO VIDEO SU YOUTUBE!</a>
+      <P>&copy; Panatta srl, all rights reserved. P.I. 00000000000</P>
+  </footer>
+</body>
+</html>

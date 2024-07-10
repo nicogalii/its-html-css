@@ -1,0 +1,33 @@
+/**
+ * style.css
+ *
+ * 4.Chessboard
+    ● Create a <table> with 8 rows and 8 columns
+    ● Your <td> elements should be empty (or contain one letter when needed)
+    ● Use CSS selectors to create a chessboard pattern like in the image below
+    ● Use the following rule to fill the table cells:
+    td {
+     width: 20px;
+     height: 20px;
+    }
+ *
+ */
+
+body {
+  background-color: beige;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd),
+tr:nth-of-type(even) td:nth-of-type(even) {
+  background-color: black;
+}
+
+tr:nth-of-type(even) td:nth-of-type(odd),
+tr:nth-of-type(odd) td:nth-of-type(even) {
+  background-color: orange;
+}

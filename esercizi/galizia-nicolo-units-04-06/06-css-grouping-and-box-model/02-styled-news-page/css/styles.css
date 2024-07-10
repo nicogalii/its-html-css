@@ -1,0 +1,155 @@
+/**
+ * style.css
+ *
+ * 2.Styled news page
+   ● Use the following HTML5 elements to create the structure of a news page:
+     ○ <header><nav><main><section><article><aside><footer>
+   ● Create several sections each containing several articles
+   ● Create anchors in the nav element that link to the sections below
+   ● Add borders, padding, margins to create the page structure
+   ● Add content (news text and images) to flesh out the page
+   ● Style the page 
+     ○ Use a different background for each HTML5 element
+     ○ One section should be the 'headline-news' and styled differently from the other sections
+     ○ Use font colors and sizes to further distinguish sections from each other
+     ○ The page be centered in the browser window (not full width)
+   Bonus:
+   ● Use an <aside> element
+     ○ Position the aside element to one side of the page using float (see future lesson)
+ *
+ */
+
+/* --------------------------------------------- */
+/*               CSS STYLE GLOBAL                */
+/* --------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* --------------------------------------------- */
+/*                    HEADER                     */
+/* --------------------------------------------- */
+header {
+  background-color: #34495e;
+}
+
+header .categories ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+header .categories ul li {
+  padding: 20px 10px;
+}
+
+header .categories ul li:hover {
+  background-color: #527291;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* --------------------------------------------- */
+/*                     MAIN                      */
+/* --------------------------------------------- */
+
+main {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 60px;
+  color: #34495e;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+}
+
+section img {
+  width: 100%;
+  height: 300px;
+  padding-bottom: 10px;
+}
+
+section article {
+  margin-bottom: 20px;
+}
+
+#container-news-letter {
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+
+#container-news-letter form {
+  text-align: center;
+}
+
+#container-news-letter form legend {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#container-news-letter input[type="text"],
+#container-news-letter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#container-news-letter input[type="submit"],
+#container-news-letter input[type="reset"] {
+  padding: 12px 25px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#container-news-letter input[type="submit"]:hover,
+#container-news-letter input[type="reset"]:hover {
+  background-color: #3e8e41;
+}
+
+/* --------------------------------------------- */
+/*                    FOOTER                     */
+/* --------------------------------------------- */
+footer {
+  padding: 20px;
+  background-color: #212121;
+  text-align: center;
+}
+
+footer p {
+  padding: 15px 0;
+  margin: 0;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}

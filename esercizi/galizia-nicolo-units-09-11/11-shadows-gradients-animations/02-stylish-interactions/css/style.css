@@ -1,0 +1,47 @@
+/**
+* style.css
+* 
+* 
+*/
+
+/* GLOBAL STYLE */
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    --color-nav: #4527a0;
+    --color-body: #fbc02d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--color-body);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(69, 39, 160, 1) 0%, rgba(251, 192, 45, 1) 50%, rgba(69, 39, 160, 1) 100%);
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-nav);
+}
+
+main {
+    margin: 20px;
+}
+
+main p {
+    text-align: center;
+    color: var(--color-nav);
+}

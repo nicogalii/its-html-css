@@ -1,0 +1,40 @@
+/**
+ * style.css
+ *
+ * 7.We mean business
+   ● Create a table with details of business contacts
+     ○ Columns can include: name, email address, country, etc (max 6 columns)
+     ○ Fill the table with contents
+   ● Add a styles.css file. The HTML file should not contain any inline styles!
+   ● The table header should have a background color
+   ● The table rows should have an alternating white/grey background
+     ○ Row 1 grey, row 2 white, row 3 grey, etc
+   ● When the user hovers over a row with the mouse the color should change
+   Bonus: modify your CSS so that the table row colors alternate every 2 rows
+ *
+ */
+
+th,
+tr,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #d2d2d2;
+}
+
+th {
+  background-color: #abcdef;
+}
+
+tr:nth-of-type(4n),
+tr:nth-of-type(4n-1) {
+  background-color: #fffeef;
+}
+
+tr:hover {
+  background-color: #ffa500;
+}

@@ -1,0 +1,36 @@
+c html {
+  font-size: 20px;
+}
+
+.container {
+  background-color: purple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  margin: 100px auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-color: green;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    background-color: black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-color: red;
+  }
+}

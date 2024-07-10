@@ -1,0 +1,15 @@
+p a {
+    font-family: "Open Sans", sans-serif;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer a {
+    color: red;
+}
+
+footer a:hover {
+    color: green(0, 248, 62);
+}

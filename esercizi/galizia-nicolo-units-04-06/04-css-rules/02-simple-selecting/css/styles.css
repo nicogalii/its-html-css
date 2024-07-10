@@ -1,0 +1,11 @@
+.paragraph {
+    background-color: aqua;
+}
+
+#subtitle {
+    color: red;
+}
+
+.paragraph em {
+    color: blue;
+}

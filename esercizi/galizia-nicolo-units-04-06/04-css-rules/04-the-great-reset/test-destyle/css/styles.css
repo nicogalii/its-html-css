@@ -1,0 +1,116 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 2rem;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 0;
+
+}
+
+p {
+    margin: 0;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p a {
+    color: #007bff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    list-style-type: disc;
+    text-indent: 10px;
+    margin-left: 50px;
+    line-height: 20px;
+    padding: 0;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+li a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+
+
+form {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    border: 1px solid black;
+}
+
+input[type="radio"] {
+    border: 7px solid black;
+    border-radius: 7px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: red;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #00ff37;
+}

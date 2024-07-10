@@ -1,0 +1,153 @@
+/**
+ * style.css
+ *
+ * 6.Flag maker
+   ● Same rules as the previous exercise
+   ● Create a <table> with 9 rows and 9 columns for each flag
+   ● Use CSS selectors to create the Italian and US flags like in the images below
+   ● In the same HTML file create as many other flags as you can think of
+   ● Use CSS selectors in creative ways
+   ● Bonus: make a flag that changes from one nation to another when the 
+   mouse hovers over it
+ *
+ */
+
+body {
+  background-color: beige;
+}
+
+/* table another border  */
+
+td {
+  width: 20px;
+  height: 20px;
+}
+
+/* italy-flag */
+
+#italy-flag td:nth-child(-n + 3) {
+  background-color: green;
+}
+
+#italy-flag td:nth-child(n + 4) {
+  background-color: white;
+}
+
+#italy-flag td:nth-child(n + 7) {
+  background-color: red;
+}
+
+/* usa-flag */
+
+#usa-flag tr:nth-child(-n + 4) td:nth-child(-n + 4) {
+  background-color: blue;
+  color: white;
+}
+
+#usa-flag tr:nth-child(odd) td {
+  background-color: red;
+}
+
+#usa-flag tr:nth-child(even) td {
+  background-color: white;
+}
+
+/* usa-flag in italy-flag */
+
+#italy-flag:hover tr:nth-child(-n + 4) td:nth-child(-n + 4) {
+  background-color: blue;
+}
+
+#italy-flag:hover tr:nth-child(odd) td {
+  background-color: red;
+}
+
+#italy-flag:hover tr:nth-child(even) td {
+  background-color: white;
+}
+
+/* italy-flag in usa-flag */
+
+#usa-flag:hover tr td:nth-child(-n + 3) {
+  background-color: green;
+}
+
+#usa-flag:hover tr td:nth-child(n + 4) {
+  background-color: white;
+}
+
+#usa-flag:hover tr td:nth-child(n + 7) {
+  background-color: red;
+}
+
+/* add the (*) in the flag after the hover */
+
+#italy-flag:hover
+  tr:nth-child(even):nth-child(-n + 4)
+  td:nth-child(even):nth-child(-n + 4)::after,
+#italy-flag:hover
+  tr:nth-child(odd):nth-child(-n + 4)
+  td:nth-child(odd):nth-child(-n + 4)::after {
+  content: "*";
+  color: white;
+}
+
+/* add the (*) in the flag before the hover */
+#usa-flag
+  tr:nth-child(even):nth-child(-n + 4)
+  td:nth-child(even):nth-child(-n + 4)::after,
+#usa-flag
+  tr:nth-child(odd):nth-child(-n + 4)
+  td:nth-child(odd):nth-child(-n + 4)::after {
+  content: "*";
+  color: white;
+}
+
+/* delete the (*) in the flag after the hover */
+#usa-flag:hover
+  tr:nth-child(even):nth-child(-n + 4)
+  td:nth-child(even):nth-child(-n + 4)::after,
+#usa-flag:hover
+  tr:nth-child(odd):nth-child(-n + 4)
+  td:nth-child(odd):nth-child(-n + 4)::after {
+  content: "";
+  color: white;
+}
+
+#creeper tr td {
+  background-color: green;
+}
+
+/* Eyes of the creeper */
+#creeper tr:nth-child(2) td:nth-child(2),
+#creeper tr:nth-child(2) td:nth-child(3),
+#creeper tr:nth-child(3) td:nth-child(2),
+#creeper tr:nth-child(3) td:nth-child(3),
+#creeper tr:nth-child(2) td:nth-child(7),
+#creeper tr:nth-child(2) td:nth-child(8),
+#creeper tr:nth-child(3) td:nth-child(7),
+#creeper tr:nth-child(3) td:nth-child(8) {
+  background-color: black;
+}
+
+/* Nose and mouth of the creeper */
+#creeper tr:nth-child(4) td:nth-child(4),
+#creeper tr:nth-child(4) td:nth-child(5),
+#creeper tr:nth-child(4) td:nth-child(6),
+#creeper tr:nth-child(5) td:nth-child(4),
+#creeper tr:nth-child(5) td:nth-child(5),
+#creeper tr:nth-child(5) td:nth-child(6),
+#creeper tr:nth-child(6) td:nth-child(3),
+#creeper tr:nth-child(6) td:nth-child(4),
+#creeper tr:nth-child(6) td:nth-child(5),
+#creeper tr:nth-child(6) td:nth-child(6),
+#creeper tr:nth-child(6) td:nth-child(7),
+#creeper tr:nth-child(7) td:nth-child(3),
+#creeper tr:nth-child(7) td:nth-child(4),
+#creeper tr:nth-child(7) td:nth-child(5),
+#creeper tr:nth-child(7) td:nth-child(6),
+#creeper tr:nth-child(7) td:nth-child(7),
+#creeper tr:nth-child(8) td:nth-child(3),
+#creeper tr:nth-child(8) td:nth-child(7) {
+  background-color: black;
+}

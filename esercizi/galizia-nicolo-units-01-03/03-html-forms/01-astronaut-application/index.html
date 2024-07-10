@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicazione astronauta</title>
+    <meta
+      name="description"
+      content="Registration page to become an astronaut"
+    />
+    <meta name="author" content="Galizia Nicolò" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+  </head>
+
+  <body>
+    <h1>Applicazione astronauta</h1>
+    <form action="#" method="post">
+      <!-- Insertion personal data -->
+      <fieldset>
+        <legend>DATI PERSONALI</legend>
+
+        <!-- Insertion of the name -->
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Inserisci il tuo nome..."
+          required
+        />
+        <br />
+
+        <!-- Insertion of the second name -->
+        <label for="second_name">Secondo nome:</label>
+        <input
+          type="text"
+          id="second_name"
+          name="second_name"
+          placeholder="Inserisci il tuo secondo nome..."
+        />
+        <br />
+
+        <!-- Insertion of the surname -->
+        <label for="surname">Cognome:</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="Inserisci il tuo cognome..."
+          required
+        />
+        <br />
+
+        <!-- Insertion of the date of birth -->
+        <label for="date">Data di nascita:</label>
+        <input type="date" id="date" name="date" required />
+        <br />
+
+        <!-- Insertion of the gender -->
+        <input type="radio" name="gender" id="male" value="man" />
+        <label for="male">Maschio</label>
+        <input type="radio" name="gender" id="female" value="woman" checked />
+        <label for="female">Femmina</label>
+        <br />
+
+        <!-- Insertion of the hair color -->
+        <label for="hair">Colore capelli:</label>
+        <input type="color" id="hair" name="color-hair" required />
+        <br />
+
+        <!-- Insertion of the eyes color -->
+        <label for="eyes">Colore occhi:</label>
+        <input type="color" id="eyes" name="color-eyes" required />
+      </fieldset>
+      <br />
+
+      <!-- Insertion information of contact -->
+      <fieldset>
+        <legend>INFO DI CONTATTO</legend>
+
+        <!-- Insertion of the email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Inserisci la tua email..."
+          required
+        />
+        <br />
+
+        <!-- Insertion of the phone number -->
+        <label for="tel">Numero di telefono:</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+          placeholder="Numero di telefono..."
+          maxlength="16"
+          required
+        />
+        <br />
+
+        <!-- Insertion of the andress -->
+        <label for="address">Indirizzo:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Inserisci il tuo indirizzo..."
+          required
+        />
+        <br />
+
+        <!-- Insertion of the weight -->
+        <label for="weight">Peso:</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          min="50"
+          max="100"
+          required
+        />
+      </fieldset>
+      <br />
+
+      <!-- Other information -->
+      <fieldset>
+        <legend>ALTRE INFO</legend>
+
+        <!-- Insertion of the mission -->
+        <label for="mission">Missione:</label>
+        <textarea
+          id="mission"
+          name="mission"
+          placeholder="Inserisci la missione che vorreti fare..."
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
+        <br />
+
+        <!-- Insertion of the biography -->
+        <label for="bio">Biografia:</label>
+        <textarea
+          id="bio"
+          name="bio"
+          maxlength="255"
+          placeholder="Inserisci la bio - max 255 caratteri..."
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
+        <br />
+
+        <!-- Reset of the entered data -->
+        <input type="reset" value="Reset" />
+        <br />
+
+        <!-- Sending of the entered data -->
+        <input type="submit" value="Invia" />
+      </fieldset>
+    </form>
+  </body>
+</html>

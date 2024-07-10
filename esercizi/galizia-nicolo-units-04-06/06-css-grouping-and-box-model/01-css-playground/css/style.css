@@ -1,0 +1,98 @@
+/**
+ * style.css
+ *
+ * 1.CSS playground
+   ● Spans
+     ○ Wrap several words or phrases with span tags
+     ○ Give them a class or id
+     ○ Style them using different CSS rules; padding, border, margins, colors, backgrounds, 
+   fonts, text styles, etc
+   ● Divs and semantic HTML5 elements
+     ○ Use divs to create containers for your content 
+     ○ Divide the page into into different sections: a header, content area, sidebar, and a 
+   footer
+     ○ Give them a class or id where necessary
+     ○ Style them using different CSS rules; padding, border, margins, colors, backgrounds, 
+   fonts, content alignment, round corners, etc
+   ● Images
+     ○ Add a width & height to some img & div elements
+     ○ Use CSS selectors to target specific images in div containers
+     ○ Set a rule for all img tags so they can never outsize their parents
+ *
+ */
+
+/* --------------------------------------------- */
+/*               CSS STYLE GLOBAL                */
+/* --------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Span styles */
+.span-color {
+  background-color: yellow;
+  padding: 0 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* --------------------------------------------- */
+/*               HEADER, FOOTER                  */
+/* --------------------------------------------- */
+header,
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* --------------------------------------------- */
+/*                     MAIN                      */
+/* --------------------------------------------- */
+main {
+  padding: 15px;
+  background-color: white;
+}
+main article {
+  padding: 15px;
+  text-align: left;
+}
+
+/* --------------------------------------------- */
+/*                     NAV                       */
+/* --------------------------------------------- */
+main nav {
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+main nav li {
+  display: inline;
+  margin: 0 10px;
+}
+main nav li a {
+  text-decoration: none;
+  color: white;
+}
+/* Image styles */
+img {
+  max-width: 100%;
+  margin-top: 20px;
+}

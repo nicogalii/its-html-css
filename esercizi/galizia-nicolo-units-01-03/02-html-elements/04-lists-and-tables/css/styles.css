@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(211, 199, 183);
+}
+hr {
+    border: 1px solid black;
+}
+table {
+    border: 2px solid black;
+    
+}
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 1px solid black;
+}

@@ -1,0 +1,192 @@
+/**
+* style.css
+*
+* 1.Alien frogs
+  ● On an alien planet you find alien frogs
+    ○ Two types: green and orange
+    ○ And two sizes: big and small
+    ○ Small frogs have dark eyes
+    ○ Big frogs have bright eyes
+    ○ When frogs are touched their eyes become black
+  ● See next page for technical details
+  ● See frogs.gif animation for behaviors
+  ● Create a page full of all possible combinations of alien frogs
+  ● Frogs should fill the page from left to right
+  ● Frogs should wrap if there isn't enough space
+  ● All frogs should change their eye color to black when touched
+  ● The HTML should be valid and complete
+  ● In the readme.md explain your CSS code
+  ● Do all the work in CSS, the HTML should only include elements of this type:
+   <div class="frog type1 small">--</div>
+   <div class="frog type2 small">--</div>
+   <!-- etc... -->
+*/
+
+/* GLOBAL STYLE */
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* Background color of the page */
+body {
+    background-color: #f5f5dd;
+    font-size: 0;
+}
+
+/* Style of the h1 */
+h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Style for elements with class 'frog' */
+.frog {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    margin: 60px 120px;
+    text-align: center;
+    line-height: 2.5em;
+    width: 300px;
+    height: 150px;
+}
+
+
+/* Style for elements with class 'small' */
+.small {
+    width: 200px;
+    height: 100px;
+}
+
+
+/* Style for elements with class 'type1' */
+.type1 {
+    background-color: #fc5424;
+}
+
+
+/* Style for elements with class 'type2' */
+.type2 {
+    background-color: #8ac151;
+}
+
+/* Base style of frog types */
+.type1.small::before,
+.type1.small::after,
+.type2.small::before,
+.type2.small::after,
+.type1::before,
+.type1::after,
+.type2::before,
+.type2::after {
+    content: "O";
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+
+/* Adjust dimensions and positioning of the eyes */
+.type1::before,
+.type2::before {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: -40px;
+    line-height: 80px;
+}
+
+.type1::after,
+.type2::after {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    right: -40px;
+    line-height: 80px;
+}
+
+/* Positioning of the eyes of the frog small */
+.type1.small::before,
+.type2.small::before {
+    top: -30px;
+    left: -30px;
+}
+
+.type1.small::after,
+.type2.small::after {
+    top: -30px;
+    right: -30px;
+}
+
+
+
+/* Background color and color for eyes of the frog type1*/
+.type1::before {
+    background-color: #fdaa91;
+    color: #000;
+}
+
+.type1::after {
+    background-color: #fdaa91;
+    color: #000;
+}
+
+/* Background color and color for eyes of the frog type2*/
+.type2::before {
+    background-color: #dcedc9;
+    color: #000;
+}
+
+.type2::after {
+    background-color: #dcedc9;
+    color: #000;
+}
+
+/* Background color for eyes of the frog small type1*/
+.type1.small::before {
+    background-color: #be340e;
+}
+
+.type1.small::after {
+    background-color: #be340e;
+}
+
+/* Background color for eyes of the frog small type2*/
+.type2.small::before {
+    background-color: #548935;
+}
+
+.type2.small::after {
+    background-color: #548935;
+}
+
+
+
+/* Hover effect on the eyes of the all frogs*/
+.frog:hover::before,
+.frog:hover::after {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Change of the cursor when is hover the frogs */
+.frog:hover {
+    cursor: pointer;
+}
