@@ -8,8 +8,11 @@
 html {
     box-sizing: border-box;
     font-size: 20px;
-    --color-nav: #4527a0;
-    --color-body: #fbc02d;
+    --color-text: #000000;
+    --color-body: #fffffff;
+    --color-header-one: #3AAB58;
+    --color-header-two: #FFFFFF;
+    --color-shadow: #3AAB58;
 }
 
 *,
@@ -27,14 +30,14 @@ header {
     position: relative;
     right: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(69, 39, 160, 1) 0%, rgba(251, 192, 45, 1) 50%, rgba(69, 39, 160, 1) 100%);
+    background: linear-gradient(to bottom, var(--color-header-one), var(--color-header-two));
 }
 
 h1 {
     font-size: 2rem;
     padding: 10px;
     text-align: center;
-    color: var(--color-nav);
+    color: var(--color-text);
 }
 
 main {
@@ -42,6 +45,10 @@ main {
 }
 
 main p {
-    text-align: center;
-    color: var(--color-nav);
+    color: var(--color-text);
+    transition: 0.5s;
+}
+
+main p:hover {
+    text-shadow: 0 0 10px var(--color-shadow);
 }
