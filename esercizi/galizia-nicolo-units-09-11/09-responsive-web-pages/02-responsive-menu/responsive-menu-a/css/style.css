@@ -1,7 +1,5 @@
 /**
 * style.css
-* 
-* 
 */
 
 /* GLOBAL STYLE */
@@ -70,13 +68,8 @@ nav {
   display: none;
 }
 
-
-
-/* MEDIA QUERIES */
+/* Media queries */
 @media (max-width: 1100px) {
-
-
-
   #top-nav ul li {
     display: none;
   }

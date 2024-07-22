@@ -1,18 +1,16 @@
 /**
 * style.css
-* 
-* 
 */
 
-/* GLOBAL STYLE */
+/* Global styles */
 html {
     box-sizing: border-box;
     font-size: 20px;
-    --color-text: #000000;
-    --color-body: #fffffff;
-    --color-header-one: #3AAB58;
-    --color-header-two: #FFFFFF;
-    --color-shadow: #3AAB58;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-radial: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    --color-shadow: #ab3a98;
+    --color-gradient: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 *,
@@ -21,25 +19,29 @@ html {
     box-sizing: inherit;
 }
 
+/* Style body */
 body {
-    background: var(--color-body);
+    background: var(--color-white);
     font-family: Arial, sans-serif;
 }
 
+/* Style header */
 header {
     position: relative;
     right: 0;
     left: 0;
-    background: linear-gradient(to bottom, var(--color-header-one), var(--color-header-two));
+    background: var(--color-radial);
+
 }
 
 h1 {
     font-size: 2rem;
     padding: 10px;
     text-align: center;
-    color: var(--color-text);
+    color: var(--color-black);
 }
 
+/* Style main */
 main {
     margin: 20px;
 }
@@ -51,4 +53,33 @@ main p {
 
 main p:hover {
     text-shadow: 0 0 10px var(--color-shadow);
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: var(--color-gradient);
+    margin: 50px auto;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: move 5s linear infinite;
+}
+
+#square:hover {
+    animation-play-state: paused;
+}
+
+/* Animation of the ID 'square' */
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc(100% - 100px);
+    }
+
+    100% {
+        left: 0;
+    }
 }

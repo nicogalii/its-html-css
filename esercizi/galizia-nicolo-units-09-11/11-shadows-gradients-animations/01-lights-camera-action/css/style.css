@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 2rem;
+  padding: 0;
+  background-color: ivory;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 1.5em 0;
+}
+
+.container>div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linear-gradient {
+  background: linear-gradient(to right, red, blue);
+}
+
+#radial-gradient {
+  background: radial-gradient(circle, red, green, blue);
+}
+
+#conic-gradient {
+  background: conic-gradient(red, yellow, blue);
+}
+
+#box-shadow {
+  background-color: red;
+  box-shadow: 10px 10px 4px 2px black;
+}
+
+#text-shadow {
+  font-size: 7rem;
+  text-shadow: 7px 7px 2px grey, 14px 14px 2px grey;
+}
+
+#transition-property {
+  transition-property: background-color;
+  background-color: red;
+}
+
+#transition-property:hover,
+#transition-property:focus {
+  background-color: #eee;
+}
+
+#transition-duration {
+  transition-property: background-color;
+  transition-duration: 2s;
+  background-color: red;
+}
+
+#transition-duration:hover,
+#transition-duration:focus {
+  background-color: #eee;
+}
+
+#transition-timing-function {
+  background-color: red;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+
+#transition-timing-function:hover,
+#transition-timing-function:focus {
+  width: 100px;
+}
+
+#transition-delay {
+  background-color: red;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 5s;
+}
+
+#transition-delay:hover,
+#transition-delay:focus {
+  background-color: #eee;
+}
