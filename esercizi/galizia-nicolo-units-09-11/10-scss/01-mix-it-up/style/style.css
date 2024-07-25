@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff5733;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+header h1 {
+  background-color: #f1c40f;
+  font-weight: bold;
+  font-size: 3em;
+  color: #ff5733;
+  margin: 0;
+}
+
+main {
+  padding: 2em;
+}
+main h2 {
+  background-color: #f1c40f;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ff5733;
+}
+main p {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #ff5733;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

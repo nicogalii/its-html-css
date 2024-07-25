@@ -1,7 +1,5 @@
 /**
 * style.css
-* 
-* 
 */
 
 /* GLOBAL STYLE */
@@ -88,9 +86,7 @@ nav {
   padding: 20px 0;
 }
 
-
-
-/* MEDIA QUERIES */
+/* Media queries */
 @media (min-width: 1100px) {
 
   #colum-nav ul li {
@@ -125,8 +121,4 @@ nav {
   #menu {
     display: none;
   }
-
-
-
-
 }

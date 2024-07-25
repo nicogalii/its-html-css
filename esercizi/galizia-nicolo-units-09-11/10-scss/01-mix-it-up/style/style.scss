@@ -1,0 +1,77 @@
+// Variables
+$primary-color: #ff5733;      
+$secondary-color: #c70039;    
+$highlight-color: #f1c40f;    
+$hover-color: #900c3f;        
+$text-color: #ffffff;         
+
+// Mixins
+@mixin highlight-text($bg-color) {
+  background-color: $bg-color;
+}
+
+@mixin text-weight($weight) {
+  @include highlight-text($highlight-color);
+  font-weight: $weight;
+}
+
+@mixin text-size-and-weight($size) {
+  @include text-weight(bold);
+  font-size: $size;
+}
+
+// Global style
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+// Style header
+header {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+    @include text-size-and-weight(3em);
+    color: $primary-color;
+    margin: 0;
+  }
+}
+
+// Style main
+main {
+  padding: 2em;
+
+    h2 {
+      @include text-size-and-weight(2em);
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+}
+
+// Style footer
+footer {
+  background-color: $primary-color;
+  color: $text-color;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
