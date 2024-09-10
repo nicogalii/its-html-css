@@ -1,0 +1,210 @@
+/*
+* style.css
+*
+*/
+
+/* Set box-sizing rules and custom proprieties*/
+html {
+  box-sizing: border-box;
+  --bgc-color: #2f4858;
+  --text-items-color: #2f4858;
+  --text-color: #f26419;
+  --bgc-items-color: #86bbd8;
+  --bgc-container: #f6ae2d;
+  font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bgc-items-color);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+/* Example of propriety by flex-direction */
+h2 {
+  font-size: 2.3rem;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.items {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bgc-items-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.container {
+  background-color: var(--bgc-container);
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.flex-container {
+  width: 1000px;
+  background-color: var(--bgc-color);
+  color: var(--text-items-color);
+  padding: 50px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+/* Example of css flex-direction */
+#example-row {
+  flex-direction: row;
+}
+
+#example-row-reverse {
+  flex-direction: row-reverse;
+}
+
+#example-column {
+  flex-direction: column;
+}
+
+#example-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Example of css flex-wrap */
+#example-wrap {
+  flex-wrap: wrap;
+}
+
+#example-nowrap {
+  flex-wrap: nowrap;
+}
+
+#example-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Example of css flex-wrap */
+#example-flow-first {
+  flex-flow: row-reverse wrap;
+}
+
+#example-flow-second {
+  flex-flow: column wrap-reverse;
+}
+
+/* Example of css justify-content */
+#example-flex-start {
+  justify-content: flex-start;
+}
+
+#example-flex-end {
+  justify-content: flex-end;
+}
+
+#example-center {
+  justify-content: center;
+}
+
+#example-space-between {
+  justify-content: space-between;
+}
+
+#example-space-around {
+  justify-content: space-around;
+}
+
+#example-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* Example of css align-items */
+.align-items-container {
+  height: 300px;
+}
+
+#example-align-items-flex-start {
+  align-items: flex-start;
+}
+
+#example-align-items-flex-end {
+  align-items: flex-end;
+}
+
+#example-align-items-center {
+  align-items: center;
+}
+
+#example-align-items-stretch .items {
+  height: auto;
+}
+
+#example-align-items-stretch {
+  align-items: stretch;
+}
+
+#example-align-items-baseline #item1 {
+  height: 100px;
+  margin-top: 50px;
+}
+
+#example-align-items-baseline #item2 {
+  height: 50px;
+}
+
+#example-align-items-baseline #item3 {
+  height: 170px;
+}
+
+#example-align-items-baseline #item4 {
+  height: 90px;
+}
+
+#example-align-items-baseline {
+  align-items: baseline;
+}
+
+/* Example of css content-container */
+.align-content-container {
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+#example-align-content-flex-start {
+  align-content: flex-start;
+}
+
+#example-align-content-flex-end {
+  align-content: flex-end;
+}
+
+#example-align-content-center {
+  align-content: center;
+}

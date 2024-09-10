@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Additional information about the document -->
+  <meta name="description" content="" />
+  <meta name="author" content="Nicolò Galizia" />
+
+  <!-- Linking CSS stylesheets -->
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  <h1>Flexbox</h1>
+  <!-- Example flex-direction -->
+  <div class="flex-container">
+    <h2>Flex-direction</h2>
+    <h3>Flex-direction: <span>row</span></h3>
+    <div class="container" id="example-row">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+
+    <h3>Flex-direction: <span>row-reverse</span></h3>
+    <div class="container" id="example-row-reverse">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+
+    <h3>Flex-direction: <span>column</span></h3>
+    <div class="container" id="example-column">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+    </div>
+
+    <h3>Flex-direction: <span>column-reverse</span></h3>
+    <div class="container" id="example-column-reverse">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+    </div>
+  </div>
+
+  <!-- Example flex-wrap -->
+  <div class="flex-container">
+    <h2>Flex-wrap</h2>
+    <h3>Flex-wrap: <span>wrap</span></h3>
+    <div class="container" id="example-wrap">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+
+    <h3>Flex-wrap: <span>nowrap</span></h3>
+    <div class="container" id="example-nowrap">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+
+    <h3>Flex-wrap: <span>wrapreverse</span></h3>
+    <div class="container" id="example-wrap-reverse">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+  </div>
+
+  <!-- Example flex-wrap -->
+  <div class="flex-container">
+    <h2>Flex-flow</h2>
+    <h3>Flex-flow: <span>row-reverse wrap</span></h3>
+    <div class="container" id="example-flow-first">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div>
+      <div class="items">9</div>
+      <div class="items">10</div>
+      <div class="items">11</div>
+      <div class="items">12</div>
+      <div class="items">13</div>
+      <div class="items">14</div>
+      <div class="items">15</div>
+    </div>
+
+    <h3>Flex-flow: <span>column wrap-reverse</span></h3>
+    <div class="container" id="example-flow-second">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+    </div>
+  </div>
+
+  <!-- Example justify-content -->
+  <div class="flex-container">
+    <h2>Justify-content</h2>
+    <h3>Justify-content: <span>flex-start</span></h3>
+    <div class="container" id="example-flex-start">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Justify-content: <span>flex-end</span></h3>
+    <div class="container" id="example-flex-end">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Justify-content: <span>center</span></h3>
+    <div class="container" id="example-center">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Justify-content: <span>space-between</span></h3>
+    <div class="container" id="example-space-between">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Justify-content: <span>space-around</span></h3>
+    <div class="container container-justify-content" id="example-space-around">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Justify-content: <span>space-evenly</span></h3>
+    <div class="container" id="example-space-evenly">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+  </div>
+
+  <!-- Example align-items -->
+  <div class="flex-container">
+    <h2>Align-items</h2>
+    <h3>Align-items: <span>flex-start</span></h3>
+    <div class="container align-items-container" id="example-align-items-flex-start">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-items: <span>flex-end</span></h3>
+    <div class="container align-items-container" id="example-align-items-flex-end">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-items: <span>center</span></h3>
+    <div class="container align-items-container" id="example-align-items-center">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-items: <span>stretch</span></h3>
+    <div class="container align-items-container" id="example-align-items-stretch">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-items: <span>baseline</span></h3>
+    <div class="container align-items-container" id="example-align-items-baseline">
+      <div class="items" id="item1">1</div>
+      <div class="items" id="item2">2</div>
+      <div class="items" id="item3">3</div>
+      <div class="items" id="item4">4</div>
+    </div>
+  </div>
+
+  <!-- Example align-content -->
+  <div class="flex-container">
+    <h2>Align-content</h2>
+    <h3>Align-content: <span>flex-start</span></h3>
+    <div class="container align-content-container" id="example-align-content-flex-start">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-content: <span>flex-end</span></h3>
+    <div class="container align-content-container" id="example-align-content-flex-end">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h3>Align-content: <span>center</span></h3>
+    <div class="container align-content-container" id="example-align-content-center">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+  </div>
+</body>
+
+</html>
