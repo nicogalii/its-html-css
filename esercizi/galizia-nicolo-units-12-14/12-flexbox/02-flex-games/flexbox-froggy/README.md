@@ -1,78 +1,82 @@
-# CSS FROGFLEX
+# Author Details
+*   Name: Nicolò Galizia
+*   Contact: nicolo.galizia@edu.itspiemonte.it
 
-## ES 1
+## FLEXBOX FROGGY
+
+### ES 1
 #pond {
     display: flex;
     justify-content:flex-end;
 }
-## ES 2
+### ES 2
 #pond {
     display: flex;
     justify-content:center;
 }
-## ES 3
+### ES 3
 #pond {
     display: flex;
     justify-content:space-around;
 }
-## ES 4
+### ES 4
 #pond {
     display: flex;
     justify-content: space-between
 }
-## ES 5
+### ES 5
 #pond {
     display: flex;
     align-items: flex-end;
 }
-## ES 6
+### ES 6
 #pond {
     display: flex;
     align-items: center;
     justify-content:center;
 }
 
-## ES 7
+### ES 7
 #pond {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-## ES 8
+### ES 8
 #pond {
     display: flex;
     flex-direction: row-reverse
 }
 
-## ES 9
+### ES 9
 #pond {
     display: flex;
     flex-direction:column
 }
 
-## ES 10
+### ES 10
 #pond {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-## ES 11
+### ES 11
 #pond {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
 
-## ES 12
+### ES 12
 #pond {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between
 }
 
-## ES 13
+### ES 13
 #pond {
     display: flex;
     flex-direction:row-reverse;
@@ -80,7 +84,7 @@
     align-items:flex-end;
 }
 
-## ES 14
+### ES 14
 #pond {
     display: flex;
 }
@@ -89,7 +93,7 @@
     order:1
 }
 
-## ES 15
+### ES 15
 #pond {
     display: flex;
 }
@@ -98,7 +102,7 @@
     order:-1;
 }
 
-## ES 16
+### ES 16
 #pond {
     display: flex;
     align-items: flex-start;
@@ -108,7 +112,7 @@
     align-self: flex-end;
 }
 
-## ES 17
+### ES 17
 #pond {
     display: flex;
     align-items: flex-start;
@@ -119,40 +123,40 @@
     order:1;
 }
 
-## ES 18
+### ES 18
 #pond {
     display: flex;
     flex-wrap: wrap;
 }
 
-## ES 19
+### ES 19
 #pond {
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
 }
 
-## ES 20
+### ES 20
 #pond {
     display: flex;
     flex-flow: column wrap;
 }
 
-## ES 21
+### ES 21
 #pond {
     display: flex;
     flex-wrap: wrap;
     align-content:flex-start;
 }
 
-## ES 22
+### ES 22
 #pond {
     display: flex;
     flex-wrap: wrap;
     align-content:flex-end;
 }
 
-## ES 23
+### ES 23
 #pond {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +164,7 @@
     align-content:center;
 }
 
-## ES 24
+### ES 24
 #pond {
     display: flex;
     flex-direction:column-reverse;

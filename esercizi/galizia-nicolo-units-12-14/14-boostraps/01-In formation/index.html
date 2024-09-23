@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form con Bootstrap</title>
+
+    <!-- Additional information about the document -->
+    <meta name="description" content="" />
+    <meta name="author" content="Nicolò Galizia" />
+
+    <!-- Link boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Form con Bootstrap</h1>
+        <form action="https://eomx6aab6i3awgb.m.pipedream.net" method="post">
+            <!-- Nome -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" required minlength="3" maxlength="50">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Cognome -->
+            <div class="mb-3">
+                <label for="surname" class="form-label">Cognome</label>
+                <input type="text" class="form-control" id="surname" name="surname" required minlength="3"
+                    maxlength="50">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Indirizzo Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Telephone number -->
+            <div class="mb-3">
+                <label for="number" class="form-label">Numero di Telefono</label>
+                <input type="tel" class="form-control" id="number" name="number" required pattern="^\d{10}$">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required minlength="8">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Date of birth -->
+            <div class="mb-3">
+                <label for="date" class="form-label">Data di Nascita</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Age -->
+            <div class="mb-3">
+                <label for="age" class="form-label">Età</label>
+                <input type="number" class="form-control" id="age" name="age" required min="18" max="100">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Tax ID code -->
+            <div class="mb-3">
+                <label for="id-code" class="form-label">Codice Fiscale</label>
+                <input type="text" class="form-control" id="id-code" name="id-code" required pattern="[A-Za-z0-9]{16}">
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="mb-3">
+                <label for="gender" class="form-label">Genere</label>
+                <select class="form-select" id="gender" name="gender" required>
+                    <option value="">Seleziona</option>
+                    <option value="maschio">Maschio</option>
+                    <option value="femmina">Femmina</option>
+                    <option value="altro">Altro</option>
+                </select>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Civil status -->
+            <div class="mb-3">
+                <label class="form-label">Stato Civile</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="civil-status" id="single" value="single"
+                        required>
+                    <label class="form-check-label" for="single">Single</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="civil-status" id="married" value="married"
+                        required>
+                    <label class="form-check-label" for="married">Sposato</label>
+                </div>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- File -->
+            <div class="mb-3">
+                <label for="file" class="form-label">Carica un file</label>
+                <input type="file" class="form-control" id="file" name="file" required>
+                <div class="invalid-feedback">
+                    Carica un file.
+                </div>
+            </div>
+
+
+            <!-- Time -->
+            <div class="mb-3">
+                <label for="time" class="form-label">Seleziona un orario</label>
+                <input type="time" class="form-control" id="time" name="time">
+            </div>
+
+            <!-- Range -->
+            <div class="mb-3">
+                <label for="range" class="form-label">Seleziona il livello di soddisfazione</label>
+                <input type="range" class="form-range" id="range" name="range" min="0" max="100">
+            </div>
+
+            <!-- Note -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Note</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="accept" name="accept" required>
+                <label for="accept" class="form-check-label">Accetto i termini e le condizioni</label>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="mb-5">
+                <button type="submit" class="btn btn-primary">Invia</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to the external JavaScript file and boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" src="./script/main.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
