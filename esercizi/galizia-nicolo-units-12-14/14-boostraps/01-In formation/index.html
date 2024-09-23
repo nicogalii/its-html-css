@@ -20,7 +20,7 @@
     <div class="container mt-5">
         <h1>Form con Bootstrap</h1>
         <form action="https://eomx6aab6i3awgb.m.pipedream.net" method="post">
-            <!-- Nome -->
+            <!-- Name -->
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="name" name="name" required minlength="3" maxlength="50">
@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <!-- Cognome -->
+            <!-- Surname -->
             <div class="mb-3">
                 <label for="surname" class="form-label">Cognome</label>
                 <input type="text" class="form-control" id="surname" name="surname" required minlength="3"
@@ -47,8 +47,9 @@
 
             <!-- Telephone number -->
             <div class="mb-3">
-                <label for="number" class="form-label">Numero di Telefono</label>
-                <input type="tel" class="form-control" id="number" name="number" required pattern="^\d{10}$">
+                <label for="telephone-number" class="form-label">Numero di Telefono</label>
+                <input type="tel" class="form-control" id="telephone-number" name="telephone-number" required
+                    pattern="^\d{10}$">
                 <div class="invalid-feedback">
                 </div>
             </div>
@@ -77,7 +78,7 @@
                 </div>
             </div>
 
-            <!-- Tax ID code -->
+            <!-- ID code -->
             <div class="mb-3">
                 <label for="id-code" class="form-label">Codice Fiscale</label>
                 <input type="text" class="form-control" id="id-code" name="id-code" required pattern="[A-Za-z0-9]{16}">
@@ -120,7 +121,6 @@
                 <label for="file" class="form-label">Carica un file</label>
                 <input type="file" class="form-control" id="file" name="file" required>
                 <div class="invalid-feedback">
-                    Carica un file.
                 </div>
             </div>
 
@@ -139,14 +139,14 @@
 
             <!-- Note -->
             <div class="mb-3">
-                <label for="message" class="form-label">Note</label>
-                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                <label for="note" class="form-label">Note</label>
+                <textarea class="form-control" id="note" name="note" rows="3"></textarea>
             </div>
 
             <!-- Checkbox -->
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="accept" name="accept" required>
-                <label for="accept" class="form-check-label">Accetto i termini e le condizioni</label>
+                <input type="checkbox" class="form-check-input" id="accept-checkbox" name="accept-checkbox" required>
+                <label for="accept-checkbox" class="form-check-label">Accetto i termini e le condizioni</label>
                 <div class="invalid-feedback">
                 </div>
             </div>
