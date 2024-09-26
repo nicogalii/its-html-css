@@ -63,7 +63,7 @@
     grid-column-end:5;
 }
 
-### 6
+### ES 6
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -74,7 +74,7 @@
     grid-column-start:-3;
 }
 
-### 7
+### ES 7
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -86,7 +86,7 @@
     grid-column-end: span 2;
 }
 
-### 8
+### ES 8
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -98,7 +98,7 @@
     grid-column-end: span 5;
 }
 
-### 9
+### ES 9
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -110,7 +110,7 @@
     grid-column-end: 6;
 }
 
-### 10
+### ES 10
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -121,7 +121,7 @@
     grid-column: 4/span 2;
 }
 
-### 11
+### ES 11
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -132,7 +132,7 @@
     grid-column: 2/span 3;
 }
 
-### 12
+### ES 12
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -143,7 +143,7 @@
     grid-row-start: 3;
 }
 
-### 13
+### ES 13
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -154,7 +154,7 @@
     grid-row: 3/span 3;
 }
 
-### 14
+### ES 14
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -166,7 +166,7 @@
     grid-row-start: 5;
 }
 
-### 15
+### ES 15
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -178,7 +178,7 @@
     grid-row: 1 / span 5; 
 }
 
-### 16
+### ES 16
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -189,7 +189,7 @@
     grid-area: 1/ 2 / 4 / span 4;
 }
 
-### 17
+### ES 17
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -204,7 +204,7 @@
     grid-area: 2 / 3 / span 3 / span 3;
 }
 
-### 18
+### ES 18
 #garden { 
     display: grid; 
     grid-template-columns: 20% 20% 20% 20% 20%; 
@@ -219,7 +219,7 @@
     order:1;
 }
 
-### 19 
+### ES 19 
 #garden {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -234,7 +234,7 @@
     order:-1;
 }
 
-### 20
+### ES 20
 #garden {
     display: grid;
     grid-template-columns:50%;
@@ -246,7 +246,7 @@
     grid-row: 1;
 }
 
-### 21
+### ES 21
 #garden {
   display: grid;
 grid-template-columns: repeat(8, 12.5%);
@@ -258,34 +258,59 @@ grid-template-columns: repeat(8, 12.5%);
   grid-row: 1;
 }
 
-### 22
+### ES 22
 #garden {
     display: grid;
     grid-template-columns: 100px 3em 40%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-### 23
+### ES 23
 #garden {
     display: grid;
     grid-template-columns:1fr 5fr;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-<!-- FIXME: Rifare questo esercizio e andare avanti con gli altri -->
-### 24 
+### ES 24 
 #garden {
-    display: grid;
-    grid-template-columns:50px 1fr 50px;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+  display: grid;
+grid-template-columns: 50px 1fr 1fr 1fr 50px; 
+  grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 #water {
-    grid-area: 1 / 1 / 6 / 2;
+  grid-area: 1 / 1 / 6 / 2;
 }
 
 #poison {
-    grid-area: 1 / 5 / 6 / 6;
+  grid-area: 1 / 5 / 6 / 6;
 }
 
-### 25
+### ES 25
+#garden {
+    display: grid;
+    grid-template-columns: 75px 3fr 2fr;
+    grid-template-rows: 100%;
+}
+
+// TODO: Non riesco a svolgere questo esercizio
+### ES 26
+
+
+### ES 27
+#garden {
+    display: grid;
+    grid-template: 60% / 200px
+}
+
+#water {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+### ES 28
+#garden {
+    display: grid;
+    grid-template: 1fr 50px/ 20% 1fr;
+}
