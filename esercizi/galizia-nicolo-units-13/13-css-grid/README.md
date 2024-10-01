@@ -294,9 +294,17 @@ grid-template-columns: 50px 1fr 1fr 1fr 50px;
     grid-template-rows: 100%;
 }
 
-// TODO: Non riesco a svolgere questo esercizio
 ### ES 26
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50px 0px 0px 0px 1fr;
+}
 
+#water {
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+}
 
 ### ES 27
 #garden {
