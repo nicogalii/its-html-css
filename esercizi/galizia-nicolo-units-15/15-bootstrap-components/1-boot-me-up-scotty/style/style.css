@@ -1,0 +1,9 @@
+/* Custom CSS to style elements */
+body {
+    background-color: #f8f9fa;
+}
+
+
+#cards {
+    padding: 70px;
+}
