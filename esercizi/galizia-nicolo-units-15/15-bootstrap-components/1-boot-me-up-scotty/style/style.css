@@ -36,13 +36,13 @@ nav {
 }
 
 
-#contact-from,
+#contact-form,
 label {
     width: 50%;
     margin: 0 auto;
 }
 
-h2 #contact-title {
+#contact-title {
     text-align: center;
     margin: 25px;
 }

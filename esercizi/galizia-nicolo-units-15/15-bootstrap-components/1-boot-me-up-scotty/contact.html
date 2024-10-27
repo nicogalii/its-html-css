@@ -6,10 +6,7 @@
     <title>Contattaci - Panatta</title>
 
     <!-- Additional information about the document -->
-    <meta
-      name="description"
-      content="Contattaci per ulteriori informazioni sui nostri prodotti e servizi."
-    />
+    <meta name="description" content="Contatti e info" />
     <meta name="author" content="Nicolò Galizia" />
 
     <!-- Linking CSS stylesheets -->
@@ -21,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <!-- Custom CSS (loaded after Bootstrap to override styles) -->
+    <!-- Linking CSS stylesheets -->
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
@@ -59,22 +56,27 @@
 
     <!--------------------- FORM --------------------->
     <h2 id="contact-title">Contattaci</h2>
-    <div class="mb-3">
-      <input
-        type="email"
-        class="form-control"
-        id="contact-from"
-        placeholder="Inserisci indirizzo email"
-      />
-    </div>
-    <div class="mb-3">
-      <textarea
-        class="form-control"
-        id="contact-from"
-        rows="3"
-        placeholder="Scrivici un messaggio"
-      ></textarea>
-    </div>
+    <form id="contact-form">
+      <div class="mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="contact-email"
+          placeholder="Inserisci indirizzo email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <textarea
+          class="form-control"
+          id="contact-message"
+          rows="3"
+          placeholder="Scrivici un messaggio"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
 
     <!-- Link to the external JavaScript file -->
     <script src="./script/main.js"></script>
