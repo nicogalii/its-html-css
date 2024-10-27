@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contattaci - Panatta</title>
 
     <!-- Additional information about the document -->
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Contattaci per ulteriori informazioni sui nostri prodotti e servizi."
+    />
     <meta name="author" content="Nicolò Galizia" />
 
     <!-- Linking CSS stylesheets -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS (loaded before custom CSS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Custom CSS (loaded after Bootstrap to override styles) -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!--------------------- NAVBAR --------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Panatta</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">Prodotti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="agency.html">Azienda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contatti</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Panatta</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Prodotti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agency.html">Azienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contatti</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="container my-5">
-        <h2>Contact Us</h2>
-        <form>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div class="alert alert-success mt-3" role="alert" style="display: none;" id="feedback">
-            Thanks for contacting us!
-        </div>
+
+    <!--------------------- FORM --------------------->
+    <h2 id="contact-title">Contattaci</h2>
+    <div class="mb-3">
+      <input
+        type="email"
+        class="form-control"
+        id="contact-from"
+        placeholder="Inserisci indirizzo email"
+      />
+    </div>
+    <div class="mb-3">
+      <textarea
+        class="form-control"
+        id="contact-from"
+        rows="3"
+        placeholder="Scrivici un messaggio"
+      ></textarea>
     </div>
 
     <!-- Link to the external JavaScript file -->
     <script src="./script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
