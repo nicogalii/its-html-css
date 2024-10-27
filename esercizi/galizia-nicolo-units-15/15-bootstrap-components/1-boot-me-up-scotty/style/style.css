@@ -1,0 +1,48 @@
+/*
+* style.css
+*
+*/
+
+/* Set box-sizing rules */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+nav {
+    height: 70px;
+}
+
+.cards {
+    padding: 50px 50px;
+
+}
+
+.card {
+    margin: 25px;
+}
+
+#story {
+    margin: 20px auto;
+}
+
+
+#contact-form,
+label {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact-title {
+    text-align: center;
+    margin: 25px;
+}
